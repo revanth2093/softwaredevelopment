@@ -1,0 +1,115 @@
+====================================================================
+GIT COMMANDS USED IN ASSIGNMENT - Git & GitHub Workflow
+====================================================================
+
+STEP 1: LOCAL REPOSITORY SETUP
+---------------------------------
+1. git init
+   - Initializes a new Git repository in the current folder.
+   - Creates a hidden .git directory to track all version control data.
+
+2. git config user.name "srivarshinireddy"
+   - Sets the author name for commits in this local repository.
+
+3. git config user.email "srivarshinireddy@gmail.com"
+   - Sets the author email for commits in this local repository.
+
+
+STEP 2: GIT WORKFLOW EXECUTION
+---------------------------------
+4. git add index.html about.html
+   - Stages specific files (index.html and about.html) for the next commit.
+   - Moves files from the working directory to the staging area.
+
+5. git commit -m "Initial commit: Add index.html and about.html"
+   - Records the staged files as the first (initial) commit in the repository.
+   - The -m flag allows providing a commit message inline.
+
+6. git branch -M main
+   - Renames the default branch from 'master' to 'main'.
+   - -M forces the rename even if a branch called 'main' already exists.
+
+7. git add index.html
+   - Stages the modified index.html file for the next commit.
+
+8. git commit -m "Update index.html: Add contact information"
+   - Records changes to index.html as the second commit.
+
+9. git checkout -b feature
+   - Creates a new branch named 'feature' and switches to it immediately.
+   - Equivalent to running 'git branch feature' then 'git checkout feature'.
+
+10. git add about.html
+    - Stages the updated about.html file on the feature branch.
+
+11. git commit -m "Feature: Enhance about.html with team details and skills list"
+    - Records changes to about.html on the feature branch.
+
+12. git checkout main
+    - Switches back to the main branch from the feature branch.
+
+13. git merge feature --no-ff -m "Merge feature branch into main"
+    - Merges the feature branch into main.
+    - --no-ff ensures a merge commit is created (preserves branch history).
+
+14. git log --oneline --all --graph --decorate
+    - Displays the full commit history in a compact, graphical format.
+    - --oneline: One line per commit.
+    - --all: Shows all branches.
+    - --graph: Shows ASCII branch/merge graph.
+    - --decorate: Shows branch and tag labels on commits.
+
+
+STEP 3: .GITIGNORE IMPLEMENTATION
+---------------------------------
+15. git add .gitignore
+    - Stages the newly created .gitignore file for committing.
+
+16. git commit -m "Add .gitignore: ignore .log files and temp/ folder"
+    - Records the .gitignore file as a new commit.
+
+
+STEP 4: UNDO OPERATION
+---------------------------------
+17. git add temp_file.txt
+    - Stages a temporary file to demonstrate the undo operation.
+
+18. git commit -m "Temporary commit to be undone"
+    - Creates a commit that will be reverted to demonstrate undo.
+
+19. git revert HEAD --no-edit
+    - Reverts the most recent commit by creating a new revert commit.
+    - This is a safe undo — it does not alter history, just adds a new commit.
+    - --no-edit: Uses the default revert commit message without opening an editor.
+
+20. git log --oneline
+    - Displays the commit history in one line per commit to show the revert effect.
+
+
+STEP 5: GITHUB INTEGRATION
+---------------------------------
+21. git remote add origin https://github.com/srivarshinireddy/github.git
+    - Links the local repository to the remote GitHub repository.
+    - 'origin' is the conventional alias for the remote repository URL.
+
+22. git push -u origin main
+    - Pushes the local main branch to the remote repository on GitHub.
+    - -u sets the upstream tracking, so future 'git push' commands know the target.
+
+
+STEP 6: ADDITIONAL USEFUL COMMANDS
+---------------------------------
+23. git status
+    - Shows the current state of the working directory and staging area.
+    - Useful for checking which files are staged, modified, or untracked.
+
+24. git diff
+    - Shows the differences between the working directory and the staging area.
+    - Useful for reviewing changes before committing.
+
+25. git branch
+    - Lists all local branches and indicates the currently active branch.
+
+====================================================================
+GitHub Repository URL: https://github.com/srivarshinireddy/github
+====================================================================
