@@ -8,10 +8,10 @@ STEP 1: LOCAL REPOSITORY SETUP
    - Initializes a new Git repository in the current folder.
    - Creates a hidden .git directory to track all version control data.
 
-2. git config user.name "srivarshinireddy"
+2. git config user.name "kalemlarevanth"
    - Sets the author name for commits in this local repository.
 
-3. git config user.email "srivarshinireddy@gmail.com"
+3. git config user.email "kalemlarevanth@gmail.com"
    - Sets the author email for commits in this local repository.
 
 
@@ -88,7 +88,7 @@ STEP 4: UNDO OPERATION
 
 STEP 5: GITHUB INTEGRATION
 ---------------------------------
-21. git remote add origin https://github.com/srivarshinireddy/github.git
+21. git remote add origin https://github.com/revanth2093/softwaredevelopment
     - Links the local repository to the remote GitHub repository.
     - 'origin' is the conventional alias for the remote repository URL.
 
@@ -111,5 +111,5 @@ STEP 6: ADDITIONAL USEFUL COMMANDS
     - Lists all local branches and indicates the currently active branch.
 
 ====================================================================
-GitHub Repository URL: https://github.com/srivarshinireddy/github
+GitHub Repository URL: https://github.com/revanth2093/softwaredevelopment
 ====================================================================
